@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <nav>
+      <p class="logo"><span id="slash">//</span> paritosh</p>
+      <ul class="nav-links">
+        <li><a href="{{url_for('index')}}">_home</a></li>
+        <li><a href="#about">_about</a></li>
+        <li><a href="#projects">_projects</a></li>
+        <li><a href="static/resume.pdf" download="static/resume.pdf">_resume</a></li>
+        <li><a href="#contact">_contact</a></li>
+      </ul>
+    </nav>
+    <div class="no-of-lines">
+      {% for line in lines %}
+        <p>{{line}}</p>
+      {% endfor %}
+    </div>
+    <section class="hero">
+      <div class="wrapper">
+        <p>// HI, I'M PARITOSH, A...</p>
+        <p id="typed-text">{"<span id="element"></span>"}</p>
+        <p id="downward-arrow" class="jello-horizontal">&#8595;</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="symbol">{/}</p>
+      <p class="heading">&lt;about_me&gt;</p>
+      <p class="description">
+        //...Greetings! I am Paritosh Palai, a Full-Stack Developer and Automation Engineer with a strong foundation in web development and cloud technologies. I specialize in building intelligent, user-focused applications and automation solutions that improve efficiency and solve real-world problems.
+        <br> <br>
+        My technical skills include Python, Django, Flask, React, Tailwind CSS, SQL, and AWS. I enjoy working on AI-powered applications, workflow automation, and scalable web platforms. I have built projects such as a fully automated YouTube content generation system and an AI-powered learning notes application.
+        <br> <br>
+        I am passionate about learning new technologies, improving my problem-solving skills, and developing impactful software that enhances user productivity and experience.
+      </p>
+    </section>
+
+    <section id="about" class="about">
+      <p class="symbol">{$}</p>
+      <p class="heading">&lt;skills&gt;</p>
+      <div class="skills-box">
+        <div class="skill-box">
+          <img src="static/images/c-1.svg" alt="c programming" />
+          <p>&lt;C Programming&gt;</p>
+        </div>
+        <div class="skill-box">
+          <img src="static/images/c.svg" alt="c++" />
+          <p>&lt;C++&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/java.png" alt="c++" />
+          <p>&lt;Java&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/python-5.svg" alt="" />
+          <p>&lt;Python&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/django.png" alt="c++" />
+          <p>&lt;Django&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/flask.png" alt="c++" />
+          <p>&lt;Flask&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/html-1.svg" alt="" />
+          <p>&lt;HTML&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/css-3.svg" alt="" />
+          <p>&lt;CSS&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/tailwindcss.png" alt="" />
+          <p>&lt;Tailwind Css&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/logo-javascript.svg" alt="" />
+          <p>&lt;Javascript&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/reactjs.png" alt="c++" />
+          <p>&lt;React js&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/mysql.png" alt="c++" />
+          <p>&lt;MySql&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/Powershell.png" alt="c++" />
+          <p>&lt;Powershell&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/powerbi.png" alt="c++" />
+          <p>&lt;PowerBi&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/AWS.png" alt="c++" />
+          <p>&lt;AWS&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/mysql.png" alt="c++" />
+          <p>&lt;mySql&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/Git.png" alt="c++" />
+          <p>&lt;Git&gt;</p>
+        </div>
+
+        <div class="skill-box">
+          <img src="static/images/Github.png" alt="c++" />
+          <p>&lt;Github&gt;</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="about projects">
+      <p class="symbol">{!}</p>
+      <p class="heading">&lt;projects&gt;</p>
+
+      <div class="project-container">
+        
+        <div class="youtube-automation-system project-box">
+          <div class="project-image"></div>
+          <p class="project-name">{ YouTube Automation System }</p>
+          <div class="project-description">
+            <p class="description-headign">&lt;description&gt;</p>
+            <p class="description-text">
+              //...Developed a fully automated video production and publishing pipeline that generates content, processes media assets, and uploads videos to YouTube without manual intervention. Integrated the YouTube Data API to automate video uploads, titles, descriptions, tags, and thumbnail management. Implemented robust logging and error tracking to monitor workflow execution, along with scheduled automation to run at predefined intervals. Leveraged Python, MoviePy, and Google Gemini API to automate content creation, including AI-generated narration, visuals, and subtitles, achieving complete end-to-end automation and ensuring consistent content publishing.
+            </p>
+            <div class="project-btns">
+              <a href="https://github.com/paritoshpalai07/Youtube-Automation-System/tree/main" target="_blank">
+                <button class="visit-btn">{Gitub}</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="learning-logs project-box">
+          <div class="project-image"></div>
+          <p class="project-name">{ Learning Logs }</p>
+          <div class="project-description">
+            <p class="description-headign">&lt;description&gt;</p>
+            <p class="description-text">
+              //...Developed a personalized learning management web application that allows users to create, organize, and manage their notes while linking them directly to source YouTube videos. Integrated Google Gemini API with the Python YouTube Transcript API to automatically generate concise summaries from video transcripts, reducing manual note-taking effort. Implemented a daily revision feature that displays a random note along with motivational quotes to encourage consistent learning habits. Built a secure user authentication system and theme toggle to provide a customizable and private user experience. Added search functionality and full editing capabilities, enabling users to easily find, update, and manage their notes and learning topics.
+            </p>
+            <div class="project-btns">
+              <a href="https://github.com/paritoshpalai07/Learning-Logs/tree/main" target="_blank">
+                <button class="visit-btn">{Github}</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sorting-visualizer project-box">
+          <div class="project-image"></div>
+          <p class="project-name">{ sorting visualizer }</p>
+          <div class="project-description">
+            <p class="description-headign">&lt;description&gt;</p>
+            <p class="description-text">
+              //...Sorting Visualizer is an interactive web application that visually demonstrates how sorting algorithms work. It supports popular algorithms like Bubble Sort, Quick Sort, Merge Sort, and more, with dynamic animations to showcase each step of the process. This project highlights my skills in algorithm implementation, JavaScript, and creating engaging user interfaces.
+            </p>
+
+            <div>
+              <a href="https://paritoshpalai-sorting-visualizer.netlify.app/" target="_blank">
+                <button class="visit-btn">{Visit}</button>
+              </a>
+
+              <a href="https://github.com/paritoshpalai07/Sorting-Visualizer" target="_blank">
+                <button class="visit-btn">{Github}</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact about">
+      <p class="symbol">{*}</p>
+      <p class="heading">&lt;contact_me&gt;</p>
+
+      <p class="contact-text">//...for collaboration contact me</p>
+
+      <!-- <form action="">
+        <div class="name">
+          <input type="text" placeholder="_name*" required />
+        </div>
+
+        <div class="email">
+          <input type="email" placeholder="_email*" required />
+        </div>
+
+        <div class="textarea">
+          <textarea placeholder="_message*"></textarea>
+        </div>
+        <button class="visit-btn submit-btn" type="submit">{submit}</button>
+      </form> -->
+      <form action="" method="post">
+        {{form.hidden_tag()}}
+        {{form.name(placeholder="_name*")}} <br>
+        {{form.email(placeholder="_email*")}} <br>
+        {{form.message(placeholder="_message*")}} <br>
+        {{form.submit(class="visit-btn submit-btn")}}
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2025 Paritosh Palai Porfolio</p>
+    </footer>
+
+{% endblock %}

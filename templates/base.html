@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%block title%}Portfolio | paritoshpalai.in {%endblock%}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Workbench&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Honk&family=Micro+5&family=VT323&family=Workbench&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/hero.css" />
+    <link rel="stylesheet" href="static/about.css" />
+    <link rel="stylesheet" href="static/projects.css" />
+    <link rel="stylesheet" href="static/contact.css" />
+    <link rel="stylesheet" href="static/media.css" />
+    <link rel="stylesheet" href="static/skills.css" />
+  </head>
+  <body>
+    {% block body %}
+    {% endblock %}
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["_Python FullStack Developer.", "_Gamer."],
+        typeSpeed: 120,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
